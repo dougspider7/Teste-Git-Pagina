@@ -1,0 +1,165 @@
+/* Layout baseado em flutuação */
+body {
+    background-color: #fff;/*branco*/
+    margin: 0;
+}
+h1 {
+    margin: 0;
+}
+#container {
+    width: 100%;
+    height: auto;/*se comporta com o conteudo do site*/
+    margin: auto;
+    background-color: #000;/*cor de fundo Preto*/
+}
+.container-header {
+    width: 80%;
+    /*    background-color: #ccc;*/
+    margin: 0 auto;/*centralizo o container*/
+    /*    height: 200px;*/
+}
+#topo {/*Observem a alteração na largura do topo devido ao padding de 2%*/
+    width: 96%;
+    height: 100px;
+    background-color: #F93;/*laranja*/
+    float: left;/*float -> ele muda o comportamento do bloco , cria um comportamento de flutuação*/
+    padding: 2%;/*apliquei padding e retirei a 4% da largura do topo*/
+}
+#topo h1 a {
+    max-width: 214px;
+    width: 100%;
+    height: 93px;
+    float: left;
+    display: block; 
+    background: url(img/logo.png) no-repeat ;/*imagem de fundo -> logo do site*/
+    text-indent: -9999px;/*retiro do visual o texto que está no h1*/
+    background-repeat: no-repeat; /*imagem não se repete*/
+}
+#logo {
+    width: 15%;
+    height: 100px;
+    background-color: aqua;
+    float: left;
+}
+#menu {
+    width: 60%;
+    height: auto;
+    /*    background-color: #ccc;*/
+    float: right; 
+    margin-top: 40px;/*distancia para o topo*/
+}
+#menu ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0; 
+}
+#menu ul {
+    float: right;/*mudo a posição da lista(links do menu) para direita*/
+}
+#menu a{/*valores que só são atribuidos ao link do menu*/
+    color: #fff;/*cor do link branco*/
+    float: left;
+    margin-left: 40px;/*distância a esquerda de cada link*/
+    font-size: 22px;
+    text-decoration: none;
+}
+#menu a:hover {/*ao passar o mouse muda o comportamneto*/
+    color: #777;
+}
+#banner h1 {
+    margin-top: 50px;
+}
+#banner {/*altura automática para a se adptar ao tipo de dispositivo*/
+    width: 100%;
+    height: auto;/*se adapta ao dispositivo*/
+    float: left;
+    /*    background: url(img/banner.jpg) no-repeat;*/
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+#banner img {
+    width: 100%; /*vale(se adapta) pra qualquer dispositivo*/
+    border: none;/*retira a borda da imagem*/
+    /*    width: 1336px;vale pra apenas um tipo dispositivo*/
+}
+.coluna {
+    padding: 1%;
+    width: 48%;
+    height: auto;
+    background-color: blue;
+    float: left;/*float -> ele muda o comportamento do bloco , cria um comportamento de flutuação*/
+}
+.coluna2 {
+    padding: 1%;
+    width: 48%;
+    height: auto;
+    background-color: red;
+    float: left;/*ele muda o comportamento do bloco*/
+}
+.coluna2 h1{/*Todos h1 dentro de class coluna2 serão de cor fuchsia */
+    color: fuchsia;
+}
+.title-yelow {
+    color: yellow !important;/*!important sobrescreve a class Pai*/
+}
+#coluna3 {
+    padding: 1%;
+    width: 48%;
+    height: 400px;
+    background-color: greenyellow;
+    float: left;
+}
+#coluna3 img {/*imagem na area de post colunas*/
+    max-width: 244px;
+    width: 100%;
+}
+figure{/*margin: 0 -> muda o comportamento que o browser aplica margin de 10px*/
+    margin: 20px 20px 0 0;/*topo, right, bottom, left -> sentido horário*/
+    float: left;/*muda o comportamento para flutuação*/
+}
+h1 {
+    margin: 0;/*cria um padrão de comportamento*/
+    font-size: 24px;/*tamanho da fonte*/
+}
+figcaption {
+   font-style: italic;/*estilo da fonte -> itálico*/
+   font-size: 12px;/*tamanho da fonte*/
+   margin: 5px 0 0 0;/*margem top de 5px*/
+}
+.saiba-mais a {
+    color: #fff;/*cor branca*/
+    text-decoration: none; /*sem decoração do texto*/
+    font-size: 14px;/*tamanho da fonte*/
+    display: block;
+    margin: 0;
+}
+.saiba-mais a:hover {/*pseudo class -> quando passa o mouse no <a> mudo comportamento*/
+    color: red;/*cor vermelha*/
+    text-decoration: underline;/*decoração do texto*/
+}
+#coluna3 p {
+    margin-top: 30px;
+}
+#coluna4 {
+    padding: 1%;
+    width: 48%;
+    height: 400px;
+    background-color: aqua;
+    float: left;
+}
+#coluna5 {
+    width: 50%;
+    height: 400px;
+    background-color: orange;
+    float: left;
+}
+#footer {
+    width: 98%;
+    height: 50px;
+    background-color: yellow;
+    float: left;
+    margin-top: 10px;
+    padding: 1%;
+}
+
+
